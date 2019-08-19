@@ -1,1 +1,100 @@
 /* You can add global styles to this file, and also import other style files */
+
+$color_rb-yellow: #fefe00;
+$color_rb-lt-orange: #ffb401;
+$color_rb-md-orange: #ff4e00;
+$color_rb-dk-orange: #ff0101;
+$color_rb-md-green: #438543;
+$color_rb-dk-green: #006500;
+$color_deep-green: #004d00;
+$color_rb-inner-sun: #f7b516;
+$color_white: #fff;
+$color_lt-gray1: #ddd;
+$color_lt-gray2: rgb(224, 230, 215);
+$color_md-gray1: #bbb;
+
+.rainbow-background1_t0d {
+  background-color: $color_white;
+  background-image: linear-gradient(
+    319deg,
+    rgba($color_rb-md-green, 0.75) 0%,
+    rgba($color_rb-yellow, 0.75) 50%,
+    rgba($color_rb-dk-orange, 0.75) 100%
+  );
+}
+
+.rainbow-background2_t0d {
+  background-color: $color_white;
+  background-image: linear-gradient(
+    319deg,
+    rgba($color_rb-dk-orange, 0.75) 0%,
+    rgba($color_rb-yellow, 0.75) 50%,
+    rgba($color_rb-md-green, 0.75) 100%
+  );
+}
+
+.deep-green-override-link_t0d {
+  ul li a {
+    color: $color_deep-green !important;
+  }
+}
+
+.deep-green-override_t0d {
+  color: $color_deep-green !important;
+}
+
+@media (max-width: 576px) {
+  .hide-for-576-and-below {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hide-for-768-and-below_t0d {
+    display: none;
+  }
+  .mobile-navbar_t0d {
+    margin-top: 0;
+  }
+  .mobile-hero-margin-top_t0d {
+    margin-top: 60px;
+  }
+  .mobile-hero-caption_t0d {
+    text-align: center;
+    font-family: Futura-Pt;
+    font-size: 18px;
+    margin-bottom: 0;
+    color: $color_deep-green;
+  }
+}
+
+// @media (max-width: 800px) {
+//   .left-protect-max800px {
+//     padding-left: 20px;
+//     font-size: 16px !important;
+//   }
+// }
+
+// @media (max-width: 576px) {
+//   .show-for-576-and-below {
+//     display: block;
+//   }
+// }
+
+@media (min-width: 576px) {
+  .hide-for-576-and-above {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .hide-for-769-and-above_t0d {
+    display: none;
+  }
+  .tablet-navbar_t0d {
+    margin-top: 113px;
+  }
+  .tablet-hero-margin-top_t0d {
+    margin-top: 113px;
+  }
+}
